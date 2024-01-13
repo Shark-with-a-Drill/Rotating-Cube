@@ -9,7 +9,6 @@
 body {
   background-color: #eee;
   min-height: 100vh;
-  display: -webkit-box;
   display: flex;
           justify-content: center;
           align-items: center;
@@ -20,7 +19,6 @@ body {
   height: 400px;
   border: 2px solid white;
   border-radius: 4px;
-  display: -webkit-box;
   display: flex;
           justify-content: center;
           align-items: center;
@@ -33,7 +31,7 @@ body {
   width: 200px;
   height: 200px;
           transform-style: preserve-3d;
-          animation: cubeRotate 20s linear infinite;
+          animation: cubeRotate 10s linear infinite;
 }
 
 
