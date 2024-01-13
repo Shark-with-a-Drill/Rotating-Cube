@@ -13,7 +13,9 @@ body {
           justify-content: center;
           align-items: center;
 }
-
+/* Sets up a 400px by 400px container with a white border */
+/* Centers its content using flexbox */
+/* Defines a perspective for 3D-transformed children, with the vanishing point set at the top right */
 .container {
   width: 400px;
   height: 400px;
@@ -26,6 +28,10 @@ body {
           perspective-origin: top right;
 }
 
+/* Positions the cube relative to its parent */
+/* Specifies the size of the cube */
+/* Applies 3D transform styles for child elements */
+/* Animates the cube with a continuous rotation in 3D space */
 .cube {
   position: relative;
   width: 200px;
@@ -34,7 +40,8 @@ body {
           animation: cubeRotate 10s linear infinite;
 }
 
-
+/* Defines the animation sequence for the cube's rotation */
+/* Rotates the cube around the Y and Z axes through 360 degrees, and around the X axis through 720 degrees, creating a complex spinning effect */
 @keyframes cubeRotate {
   from {
             transform: rotateY(0deg) rotateX(720deg) rotateZ(0deg);
@@ -44,6 +51,9 @@ body {
   }
 }
 
+/* Positions each side of the cube absolutely relative to the cube */
+/* Sets the size to fill the entire cube */
+/* Applies a slight transparency and a white border for visual effect */
 .side {
   position: absolute;
   width: 100%;
@@ -52,6 +62,8 @@ body {
   border: 2px solid white;
 }
 
+/* Each applies a background image and sizes it to cover the entire face of the cube */
+/* Positions each face of the cube correctly in 3D space using transformations */
 .front {
   background-image: url(images/face.png);
   background-size: cover;
@@ -88,6 +100,8 @@ body {
           transform: rotateX(-90deg) translateZ(100px);
 }
 
+/* Sets up the container for the rotating text */
+/* Defines a perspective and sets the size, necessary for the 3D effect */
 .text {
   perspective: 450px;
   width: 200px; /* Adjust as needed */
