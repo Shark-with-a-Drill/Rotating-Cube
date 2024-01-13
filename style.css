@@ -55,37 +55,37 @@ body {
 }
 
 .front {
-  background-image: url(face.png);
+  background-image: url(images/face.png);
   background-size: cover;
           transform: translateZ(100px);
 }
 
 .back {
-  background-image: url(back.png);
+  background-image: url(images/back.png);
   background-size: cover;
           transform: translateZ(-100px);
 }
 
 .left {
-  background-image: url(side.png);
+  background-image: url(images/side.png);
   background-size: cover;
           transform: rotateY(90deg) translateZ(100px);
 }
 
 .right {
-  background-image: url(side2.png);
+  background-image: url(images/side2.png);
   background-size: cover;
           transform: rotateY(-90deg) translateZ(100px);
 }
 
 .top {
-  background-image: url(top.png);
+  background-image: url(images/top.png);
   background-size: cover;
           transform: rotateX(90deg) translateZ(100px);
 }
 
 .bottom {
-  background-image: url(bottom.png);
+  background-image: url(images/bottom.png);
   background-size: cover;
           transform: rotateX(-90deg) translateZ(100px);
 }
